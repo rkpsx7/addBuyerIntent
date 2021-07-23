@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">addBuyerIntent</string>
+    <string name="organisation_name_tv">Organisation Name</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="address">Address</string>
+    <string name="email_address">Email Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="tax_id">Tax ID</string>
+    <string name="company_id">Company ID</string>
+</resources>

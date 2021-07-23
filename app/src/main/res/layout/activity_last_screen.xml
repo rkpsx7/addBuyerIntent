@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/upperBlueZone"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/upperbluerect" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details are shown below"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvOrganisationName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/organisation_name_tv"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/orgName"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@id/tvOrganisationName2"
+        android:layout_marginLeft="44dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upperBlueZone"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/personSVG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_person_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/customer_name"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/etName2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/tvName"
+            android:textColor="@color/black"
+            android:layout_marginLeft="74dp"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/PhoneSVG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/personSVG"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/ic_phone_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName2"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/mobile_number"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/etPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/tvPhoneNo"
+            android:textColor="@color/black"
+            android:layout_marginLeft="74dp"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/emailSVG"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneSVG"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/ic_message_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPhone2"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/email_address"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/etEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/tvEmail"
+            android:textColor="@color/black"
+            android:layout_marginLeft="74dp"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/AddressSVG"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailSVG"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/ic_location_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail2"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/etAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginLeft="74dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/ManufacturerSVG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/AddressSVG"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/ic_office_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvManufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAddress2"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/manufacturer"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="74dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/tvManufacturer"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/taxSVG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvManufacturer"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="78dp"
+            android:src="@drawable/ic_calculator_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/tax_id"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/etTaxId2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/tvTax"
+            android:layout_marginLeft="74dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/fingerSVG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taxSVG"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_fingerprint_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvCompID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etTaxId2"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/company_id"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/etFinger2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_below="@id/tvCompID"
+            android:textColor="@color/black"
+            android:layout_marginLeft="74dp"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/black" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
